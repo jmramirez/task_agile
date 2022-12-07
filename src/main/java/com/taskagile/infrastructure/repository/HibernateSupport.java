@@ -1,9 +1,11 @@
 package com.taskagile.infrastructure.repository;
 
-import com.mysql.cj.Session;
+
 import jakarta.persistence.EntityManager;
+import org.hibernate.Session;
 
 abstract class HibernateSupport {
+
   EntityManager entityManager;
 
   HibernateSupport(EntityManager entityManager){

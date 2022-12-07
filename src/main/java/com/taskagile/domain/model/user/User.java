@@ -6,6 +6,9 @@ import jakarta.persistence.*;
 import java.util.Date;
 import java.util.Objects;
 
+
+@Entity
+@Table(name = "user")
 public class User extends AbstractBaseEntity {
 
   @Id
