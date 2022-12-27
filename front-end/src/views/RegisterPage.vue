@@ -1,15 +1,18 @@
 <script>
 
+import {defineComponent} from "vue";
+import Logo from "@/components/Logo.vue";
+
+export default defineComponent({
+  components: {Logo}
+})
 </script>
 
 <template>
   <div class="container">
     <div class="row justify-content-center">
       <div class="register-form">
-        <div class="logo-wrapper">
-          <img class="logo" src="@/assets/logo.png" alt="logo" />
-          <div class="tagline">Open source task management tool</div>
-        </div>
+        <Logo />
         <form>
           <div class="form-group col-12 mb-3">
             <label for="username" class="form-label">Username</label>
@@ -53,20 +56,7 @@
   }
 }
 
-.logo-wrapper {
-  text-align: center;
-  margin-bottom: 40px;
 
-  .tagline {
-    line-height: 180%;
-    color: #666;
-  }
-
-  .logo {
-    max-width: 150px;
-    margin: 0 auto;
-  }
-}
 
 .footer {
   width: 100%;
